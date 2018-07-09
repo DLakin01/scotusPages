@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{CA7D1AB3-5E95-45FF-BD69-25716A932C68}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/lib/jquery/dist/jquery.js">
+    <Files>
+      <File FileName="Pages/Index.cshtml" Line="327" Column="37" />
+      <File FileName="Pages/Index.cshtml.cs" Line="1" Column="1" />
+      <File FileName="Pages/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/About.cshtml.cs" Line="1" Column="1" />
+      <File FileName="Pages/About.cshtml" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="21" Column="47" />
+      <File FileName="Startup.cs" Line="1" Column="1" />
+      <File FileName="wwwroot/js/easyResponsiveTabs.js" Line="43" Column="48" />
+      <File FileName="wwwroot/lib/jquery/dist/jquery.js" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.scotusPages PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
