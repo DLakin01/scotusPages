@@ -1,16 +1,33 @@
 ﻿<Properties StartupConfiguration="{CA7D1AB3-5E95-45FF-BD69-25716A932C68}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/lib/jquery/dist/jquery.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Index.cshtml">
     <Files>
-      <File FileName="Pages/Index.cshtml" Line="327" Column="37" />
-      <File FileName="Pages/Index.cshtml.cs" Line="1" Column="1" />
-      <File FileName="Pages/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/Index.cshtml.cs" Line="19" Column="1" />
+      <File FileName="Pages/_ViewImports.cshtml" Line="4" Column="1" />
       <File FileName="Pages/About.cshtml.cs" Line="1" Column="1" />
       <File FileName="Pages/About.cshtml" Line="1" Column="1" />
       <File FileName="Program.cs" Line="21" Column="47" />
-      <File FileName="Startup.cs" Line="1" Column="1" />
-      <File FileName="wwwroot/js/easyResponsiveTabs.js" Line="43" Column="48" />
-      <File FileName="wwwroot/lib/jquery/dist/jquery.js" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="52" Column="34" />
+      <File FileName="wwwroot/css/style.css" Line="67" Column="2" />
+      <File FileName="Pages/Shared/_Layout.cshtml" Line="34" Column="11" />
+      <File FileName="Pages/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/Contact.cshtml" Line="1" Column="1" />
+      <File FileName="ImageList.cs" Line="13" Column="10" />
+      <File FileName="Pages/Index.cshtml" Line="155" Column="74" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="scotusPages" expanded="True">
+            <Node name="scotusPages" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Index.cshtml" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

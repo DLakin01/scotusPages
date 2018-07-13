@@ -1,5 +1,6 @@
-
-$(function () {
+// Easy Responsive Tabs Plugin
+// Author: Samson.Onna <Email : samson3d@gmail.com> 
+(function ($) {
     $.fn.extend({
         easyResponsiveTabs: function (options) {
             //Set the default values, use comma to separate the settings, example:
@@ -104,7 +105,7 @@ $(function () {
                     count++;
                 });
 
-                //Show correct content area
+                // Show correct content area
                 var tabNum = 0;
                 if (hash != '') {
                     var matches = hash.match(new RegExp(respTabsId + "([0-9]+)"));
@@ -134,7 +135,7 @@ $(function () {
                 }
                 //assign proper classes for when tabs mode is activated before making a selection in accordion mode
                 else {
-                    // $($respTabs.find('.resp-tab-content.' + options.tabidentify)[tabNum]).addClass('resp-accordion-closed'); //removed resp-tab-content-active
+                   // $($respTabs.find('.resp-tab-content.' + options.tabidentify)[tabNum]).addClass('resp-accordion-closed'); //removed resp-tab-content-active
                 }
 
                 //Tab Click action function
@@ -169,7 +170,7 @@ $(function () {
 
                             $respTabs.find('.resp-tab-content[aria-labelledby = ' + $tabAria + '].' + options.tabidentify).slideDown().addClass('resp-tab-content-active');
                         } else {
-
+                        
                             $respTabs.find('.resp-tab-active.' + options.tabidentify).removeClass('resp-tab-active').css({
                                 'background-color': options.inactive_bg,
                                 'border-color': 'none'

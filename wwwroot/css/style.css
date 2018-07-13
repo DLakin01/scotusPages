@@ -13,6 +13,59 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+    font-family: CaptureIt;
+    src: url("~/fonts/CaptureIt.ttf")
+}
+
+.stencil {
+    font-family: CaptureIt;
+    font-size: 3.5em;
+    text-align: center;
+    margin-right: 10%;
+}
+
+.stencil-small {
+    font-family: CaptureIt;
+    font-size: 2em;
+    text-align: center;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create three equal columns that sit next to each other */
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
 body {
   font-family: "Playfair Display", serif;
   font-size: 14px;
@@ -346,6 +399,7 @@ main[role="main"], #fh5co-blog {
     float: left;
   }
 }
+
 #fh5co-services .fh5co-service > a {
   position: relative;
   text-align: center;

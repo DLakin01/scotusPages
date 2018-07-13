@@ -9,9 +9,10 @@ namespace scotusPages.Pages
 {
     public class IndexModel : PageModel
     {
-        public void OnGet()
+        public static List<Tuple<string, string>> OnGet()
         {
-
+            var imageList = ImageList.GetList();
+            return imageList;
         }
     }
 }
