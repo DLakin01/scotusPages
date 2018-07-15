@@ -9,10 +9,16 @@ namespace scotusPages.Pages
 {
     public class IndexModel : PageModel
     {
-        public static List<Tuple<string, string>> OnGet()
+        public static List<Tuple<string, string, string>> GetImages()
         {
-            var imageList = ImageList.GetList();
+            var imageList = SiteAssets.GetImages();
             return imageList;
+        }
+
+        public static List<Tuple<string, string, string>> GetResources() 
+        {
+            var resourceList = SiteAssets.GetResources();
+            return resourceList;
         }
     }
 }

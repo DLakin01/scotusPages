@@ -1,35 +1,70 @@
 /*
 //////////////////////////////////////////////////////
 
-FREE HTML5 TEMPLATE 
+FREE HTML5 TEMPLATE
 DESIGNED & DEVELOPED by FREEHTML5.CO
 
 //////////////////////////////////////////////////////
 */
 @font-face {
-  font-family: 'themify';
-  src: url("../fonts/themify/themify.eot?-fvbane");
-  src: url("../fonts/themify/themify.eot?#iefix-fvbane") format("embedded-opentype"), url("../fonts/themify/themify.woff?-fvbane") format("woff"), url("../fonts/themify/themify.ttf?-fvbane") format("truetype"), url("../fonts/themify/themify.svg?-fvbane#themify") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
     font-family: CaptureIt;
     src: url("~/fonts/CaptureIt.ttf")
+}
+
+.scotus {
+    background: url("../images/SCOTUS_PhilRoeder.jpg"), no-repeat center center;
+    background-size: cover;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    position: absolute !important;
+    max-width: 100% !important;
 }
 
 .stencil {
     font-family: CaptureIt;
     font-size: 3.5em;
     text-align: center;
-    margin-right: 10%;
 }
 
 .stencil-small {
-    font-family: CaptureIt;
-    font-size: 2em;
-    text-align: center;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: whitesmoke;
+    }
+
+    .scotus {
+        background: url("../images/SCOTUS_PhilRoeder_small.jpg"), no-repeat center center;
+        background-size: cover;
+        top: 0 !important;
+        left: 0!important;
+        right: 0!important;
+        max-width: 100% !important;
+    }
+
+    #fh5co-hero {
+        height: 200px !important;
+    }
+
+    #fh5co-crew {
+        margin-top: 205px !important;
+    }
+
+    .stencil {
+        display: none !important;
+    }
+
+    .stencil-small {
+        display: block !important;
+        font-family: CaptureIt;
+        line-height: 2em;
+        text-align: center;
+        margin-right: 10%;
+        margin-top: 40%;
+    }
 }
 
 .image-row {
@@ -212,7 +247,7 @@ ul ul, ul ol, ol ul, ol ol {
   }
 }
 #fh5co-hero .fh5co-hero-text-wrap {
-  padding-top: 100px;
+  padding-top: 100px; 
   height: 650px;
   display: table;
   width: 100%;
@@ -315,7 +350,7 @@ main[role="main"], #fh5co-blog {
 
 .fh5co-section-heading {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .fh5co-section-heading > h2 {
   font-size: 14px;
@@ -353,10 +388,11 @@ main[role="main"], #fh5co-blog {
 #fh5co-crew {
   background: #28bbf8;
   padding: 5em 0;
+  margin-top: 540px;
 }
 #fh5co-crew .fh5co-section-heading {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 5px;
 }
 #fh5co-crew .fh5co-section-heading > h2 {
   color: #ffffff;
@@ -487,7 +523,6 @@ main[role="main"], #fh5co-blog {
   list-style: none;
   padding: 0;
   margin: 0 0 0px 0;
-  opacity: 0;
 }
 .nav-active #fh5co-main-nav-wrap #fh5co-main-nav li a {
   font-size: 40px;
@@ -700,10 +735,10 @@ footer .fh5co-footer-social li a {
   z-index: 21;
 }
 
-/* 
+/*
 ========================================
 
-Components 
+Components
 
 ========================================
 */

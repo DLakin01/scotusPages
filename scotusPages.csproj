@@ -75,7 +75,6 @@
     <Content Remove="wwwroot\Fonts\themify.ttf" />
     <Content Remove="wwwroot\Fonts\themify.woff" />
     <Content Remove="wwwroot\images\Women%27s_March.jpg" />
-    <Content Remove="wwwroot\lib\jquery\dist\jquery.easing.1.3.js" />
     <Content Remove="Pages\Shared\_CookieConsentPartial.cshtml" />
     <Content Remove="wwwroot\images\hero_bg_1.jpg" />
     <Content Remove="wwwroot\images\hero_bg_2.jpg" />
@@ -109,6 +108,8 @@
     <Content Remove="wwwroot\css\style.css.map" />
     <Content Remove="wwwroot\images\Women%27s_March.jpg" />
     <Content Remove="wwwroot\images\13317455783_9ca65c2f43_o.jpg" />
+    <Content Remove="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <Content Remove="wwwroot\js\jquery.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\css\" />
@@ -117,9 +118,9 @@
     <Folder Include="wwwroot\sass\" />
     <Folder Include="wwwroot\lib\bootstrap\dist\sass\" />
     <Folder Include="wwwroot\Fonts\" />
+    <Folder Include="Pages\issues\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="wwwroot\lib\jquery\dist\jquery.easing.1.3.js" />
     <None Include="wwwroot\images\hero_bg_1.jpg" />
     <None Include="wwwroot\images\hero_bg_2.jpg" />
     <None Include="wwwroot\images\hero_bg_3.jpg" />
