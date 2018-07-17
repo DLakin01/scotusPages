@@ -12,13 +12,15 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 }
 
 .scotus {
-    background: url("../images/SCOTUS_PhilRoeder.jpg"), no-repeat center center;
+    background: url(../images/SCOTUS_PhilRoeder.jpg), no-repeat center center;
     background-size: cover;
-    top: 0 !important;
+    background-repeat: no-repeat;
+    top: -100px !important;
     left: 0 !important;
     right: 0 !important;
     position: absolute !important;
     max-width: 100% !important;
+    height: 730px !important;
 }
 
 .stencil {
@@ -31,26 +33,70 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+.mobile-header {
+    display: none;
+}
+
+.logo {
+    display: block;
+    padding: 12px 15px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.menu-controls {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #1a1a1a;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    padding: 24px 15px;
+    cursor: pointer;
+}
+
+.menu-controls i {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 3px;
+    color: #252525;
+    font: bold 14px/.4 Helvetica;
+    text-transform: uppercase;
+    text-indent: -55px;
+    background: #252525;
+    transition: all .2s ease-out;
+}
+
+.menu-controls i::before, .menu-controls i::after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background: #252525;
+    position: absolute;
+    left: 0;
+    transition: all .2s ease-out;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 601px) {
     body {
         background-color: whitesmoke;
-    }
-
-    .scotus {
-        background: url("../images/SCOTUS_PhilRoeder_small.jpg"), no-repeat center center;
-        background-size: cover;
-        top: 0 !important;
-        left: 0!important;
-        right: 0!important;
-        max-width: 100% !important;
-    }
-
-    #fh5co-hero {
-        height: 200px !important;
-    }
-
-    #fh5co-crew {
-        margin-top: 205px !important;
     }
 
     .stencil {
@@ -60,10 +106,98 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
     .stencil-small {
         display: block !important;
         font-family: CaptureIt;
-        line-height: 2em;
+        line-height: 2.4em;
         text-align: center;
-        margin-right: 10%;
-        margin-top: 40%;
+    }
+
+    .mobile-header {
+        height: 65px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 102;
+        background-color: #fff;
+        border-bottom: 1px solid #e3e2de;
+        display: block !important;
+    }
+
+    .scotus {
+        background: url(../images/SCOTUS_PhilRoeder_small.jpg), no-repeat center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 40px !important;
+        left: 0 !important;
+        right: 0 !important;
+        max-width: 100% !important;
+    }
+
+    #fh5co-crew {
+        background: #28bbf8;
+        padding: 5em 0;
+        margin-top: 35% !important;
+        width: 100% !important;
+    }
+
+    .fh5co-nav-toggle {
+        display: none;
+    }
+
+    .container {
+        width: 100% !important;
+        padding-right: 10px !important;
+        padding-left: 15px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: whitesmoke;
+    }
+
+    .mobile-header {
+        height: 65px;
+        position: fixed;
+        top: 0;
+        left: -20px;
+        width: 100%;
+        z-index: 102;
+        background-color: #fff;
+        border-bottom: 1px solid #e3e2de;
+        display: block;
+    }
+
+    .scotus {
+        background: url(../images/SCOTUS_PhilRoeder_small.jpg), no-repeat center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 40px !important;
+        left: 0 !important;
+        right: 0 !important;
+        max-width: 100% !important;
+        height: 300px !important;
+    }
+
+    #fh5co-hero {
+        height: 200px !important;
+    }
+
+    .stencil {
+        display: none !important;
+    }
+
+    .stencil-small {
+        display: block !important;
+        font-family: CaptureIt;
+        font-size: 1.4em;
+        text-align: center;
+        bottom: 10px;
+    }
+
+    #fh5co-crew {
+        background: #28bbf8;
+        padding: 5em 0;
+        margin-top: -10% !important;
     }
 }
 
@@ -86,7 +220,7 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) and (min-width: 601px)) {
     .column {
         flex: 50%;
         max-width: 50%;
@@ -216,9 +350,10 @@ ul ul, ul ol, ol ul, ol ol {
   color: #ffffff;
 }
 #fh5co-header #fh5co-logo {
-  margin-top: 50px;
   z-index: 17;
   position: relative;
+  margin-top: -15px;
+  margin-right: 20%
 }
 #fh5co-header #fh5co-logo a {
   display: block;
@@ -386,9 +521,9 @@ main[role="main"], #fh5co-blog {
 }
 
 #fh5co-crew {
-  background: #28bbf8;
-  padding: 5em 0;
-  margin-top: 540px;
+    background: #28bbf8;
+    padding: 5em 0;
+    margin-top: 300px;
 }
 #fh5co-crew .fh5co-section-heading {
   text-align: center;
@@ -727,14 +862,13 @@ footer .fh5co-footer-social li a {
 
 /* Button placement */
 .fh5co-nav-toggle {
-  position: absolute;
-  left: 20px;
-  margin-left: 0px;
-  top: 20px;
-  margin-top: 0px;
-  z-index: 21;
+    position: absolute;
+    left: -80px;
+    margin-left: 0px;
+    top: -10px;
+    margin-top: 0px;
+    z-index: 21;
 }
-
 /*
 ========================================
 

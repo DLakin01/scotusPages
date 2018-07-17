@@ -110,6 +110,8 @@
     <Content Remove="wwwroot\images\13317455783_9ca65c2f43_o.jpg" />
     <Content Remove="wwwroot\lib\jquery\dist\jquery.min.js" />
     <Content Remove="wwwroot\js\jquery.min.js" />
+    <Content Remove="wwwroot\images\banner3.svg" />
+    <Content Remove="wwwroot\images\take-back-the-court-logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\css\" />
@@ -121,24 +123,8 @@
     <Folder Include="Pages\issues\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="wwwroot\images\hero_bg_1.jpg" />
-    <None Include="wwwroot\images\hero_bg_2.jpg" />
-    <None Include="wwwroot\images\hero_bg_3.jpg" />
-    <None Include="wwwroot\images\hero_bg_4.jpg" />
-    <None Include="wwwroot\images\hero_bg_5.jpg" />
-    <None Include="wwwroot\images\hero_bg_6.jpg" />
-    <None Include="wwwroot\images\img_1.jpg" />
-    <None Include="wwwroot\images\img_2.jpg" />
-    <None Include="wwwroot\images\img_3.jpg" />
-    <None Include="wwwroot\images\img_large_1.jpg" />
-    <None Include="wwwroot\images\img_large_2.jpg" />
-    <None Include="wwwroot\images\img_large_3.jpg" />
-    <None Include="wwwroot\images\img_large_4.jpg" />
-    <None Include="wwwroot\images\img_large_5.jpg" />
-    <None Include="wwwroot\images\img_large_6.jpg" />
-    <None Include="wwwroot\images\img_large_7.jpg" />
-    <None Include="wwwroot\images\img_wide_1.jpg" />
     <None Include="wwwroot\images\Inequality_MichaelPanse.jpg" />
+    <None Include="wwwroot\images\take-back-the-court-logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Utilities\EmbeddedResourceUtility.cs" />

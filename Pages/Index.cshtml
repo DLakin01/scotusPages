@@ -75,10 +75,8 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
             <ul id="fh5co-main-nav">
                 <li class="active"><a href="@Url.Content("/index")">Home</a></li>
                 <li><a href="@Url.Content("/about")">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Get Involved</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="elements.html">Elements</a></li>
             </ul>
             <ul class="fh5co-social">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -89,89 +87,94 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
         </div>
     </div>
     <!-- Navigation -->
-
-    <div class="scotus img-responsive" id="fh5co-hero">
-        <!-- Header -->
-        <header id="fh5co-header" role="banner">
-            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>
-            <div id="fh5co-logo" class="text-center"><h1 class="stencil">Take Back the Court</h1></div>
-        </header>
-        <!-- Header -->
-    </div>
-    <!-- Mobile Header -->
+     <!-- Header -->
     <header id="fh5co-header" role="banner">
-        <div id="fh5co-logo" class="text-center"><h1 class="stencil-small">Take Back the Court</h1></div>
+        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white menu-controls"><i></i></a>
+        <div id="fh5co-logo" class="text-center"><h1 class="stencil">Take Back the Court</h1></div>
     </header>
-    <!-- Main -->
-    <main role="main">
-        <!-- Issue Areas -->
-        <div id="fh5co-crew">
-            <div class="container">
+    <!-- Header -->
+
+    <!-- Mobile Header -->
+    <header class="mobile-header" role="banner">
+        <a href="#" class="menu-controls fh5co-nav-toggle js-fh5co-nav-toggle"><i></i></a>
+        <div class="text-center"><h1 class="logo stencil-small">Take Back the Court</h1></div>
+    </header>
+    <!-- Mobile Header-->
+
+    <div class="container">
+        <div class="row" style="min-height: 250px">
+            <div class="scotus col-xs-12"></div>
+        </div>
+        <!-- Main -->
+        <main role="main">
+            <!-- Issue Areas -->
+            <div id="fh5co-crew">
+                <div class="container">
+                    <div class="fh5co-section-heading">
+                        <h1>Issues Before the Court</h1>
+                    </div>
+
+                    <div class="image-row">
+                        <div class="column">
+                            @for(var i = 0; i < 3; i++)
+                            {
+                                var url = IndexModel.GetImages()[i].Item1;
+                                var name = IndexModel.GetImages()[i].Item2;
+                                var path = IndexModel.GetImages()[i].Item3;
+                                @:<figure><a href="@Url.Page("./issues" + url)"><img class="img-responsive" src=@path alt=@name></a></figure>
+                            }
+                        </div>
+                        <div class="column">
+                            @for(var i = 3; i < 6; i++)
+                            {
+                                var url = IndexModel.GetImages()[i].Item1;
+                                var name = IndexModel.GetImages()[i].Item2;
+                                var path = IndexModel.GetImages()[i].Item3;
+                                @:<figure><a href="@Url.Page("./issues" + url)"><img class="img-responsive" src=@path alt=@name></a></figure>   
+                            }
+                        </div>
+                        <div class="column">
+                            @for(var i = 6; i < 9; i++)
+                            {
+                                var url = IndexModel.GetImages()[i].Item1;
+                                var name = IndexModel.GetImages()[i].Item2;
+                                var path = IndexModel.GetImages()[i].Item3;
+                                @:<figure><a href="@Url.Page("./issues" + url)"><img class="img-responsive" src=@path alt=@name></a></figure>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Issue Areas -->
+            <!-- Resources -->
+            <div class="container-fluid">
                 <div class="fh5co-section-heading">
-                    <h1>Issues Before the Court</h1>
+                    <h2 class="text-muted">Resources</h2>
+                    <h3 class="text-center">Learn more, get involved, and make change.</h3>
                 </div>
+                <div class="row">
+                    @foreach(var r in IndexModel.GetResources())
+                    {
+                        var url = r.Item1;
+                        var title = r.Item2;
+                        var text = r.Item3;
 
-                <div class="image-row">
-                    <div class="column">
-                        @for(var i = 0; i < 3; i++)
-                        {
-                            var url = IndexModel.GetImages()[i].Item1;
-                            var name = IndexModel.GetImages()[i].Item2;
-                            var path = IndexModel.GetImages()[i].Item3;
-                            @:<figure><a href="@Url.Page("./issues" + url)"><img class="img-responsive" src=@path alt=@name></a></figure>
-                        }
-                    </div>
-                    <div class="column">
-                        @for(var i = 3; i < 6; i++)
-                        {
-                            var url = IndexModel.GetImages()[i].Item1;
-                            var name = IndexModel.GetImages()[i].Item2;
-                            var path = IndexModel.GetImages()[i].Item3;
-                            @:<figure><a href="@Url.Page("./issues" + url)"><img class="img-responsive" src=@path alt=@name></a></figure>   
-                        }
-                    </div>
-                    <div class="column">
-                        @for(var i = 6; i < 9; i++)
-                        {
-                            var url = IndexModel.GetImages()[i].Item1;
-                            var name = IndexModel.GetImages()[i].Item2;
-                            var path = IndexModel.GetImages()[i].Item3;
-                            @:<figure><a href="@Url.Page("./issues" + url)"><img class="img-responsive" src=@path alt=@name></a></figure>
-                        }
-                    </div>
+                        @:<div class="col-md-3 col-sm-6">
+                            @:<article class="fh5co-post-entry">
+                                @:<h3 class="fh5co-blog-title fh5co-heading-with-border">
+                                    @:<a href="@Url.Page("./resources" + url)">@title</a> 
+                                    @:<span class="fh5co-border fh5co-border-gray"></span>
+                                @:</h3>
+                                @:<p>@text</p>
+                            @:</article>
+                        @:</div>
+                    }
                 </div>
             </div>
-        </div>
-        <!-- Issue Areas -->
-        <!-- Resources -->
-        <div class="container-fluid">
-            <div class="fh5co-section-heading">
-                <h2 class="text-muted">Resources</h2>
-                <h3 class="text-center">Learn more, get involved, and make change.</h3>
-            </div>
-            <div class="row">
-                @foreach(var r in IndexModel.GetResources())
-                {
-                    var url = r.Item1;
-                    var title = r.Item2;
-                    var text = r.Item3;
-
-                    @:<div class="col-md-3 col-sm-6">
-                        @:<article class="fh5co-post-entry">
-                            @:<h3 class="fh5co-blog-title fh5co-heading-with-border">
-                                @:<a href="@Url.Page("./resources" + url)">@title</a> 
-                                @:<span class="fh5co-border fh5co-border-gray"></span>
-                            @:</h3>
-                            @:<p>@text</p>
-                        @:</article>
-                    @:</div>
-                }
-            </div>
-        </div>
-        <!-- Resources -->
-    </main>
-    <!-- Main -->
-
+            <!-- Resources -->
+        </main>
+        <!-- Main -->
+    </div>
     <!-- Call to action -->
     <div class="fh5co-call-to-action" style="background-image: url(images/img_wide_1.jpg); background-position: center center;">
         <div class="fh5co-overlay"></div>
