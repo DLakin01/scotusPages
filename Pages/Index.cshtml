@@ -4,238 +4,119 @@
     ViewData["Title"] = "Home page";
 }
 
-<!--
-//////////////////////////////////////////////////////
+ <!-- Header -->
+<header id="fh5co-header" role="banner">
+    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white menu-controls"><i></i></a>
+    <div id="fh5co-logo" class="text-center"><h1 class="stencil">Take Back the Court</h1></div>
+</header>
+<!-- Header -->
 
-FREE HTML5 TEMPLATE
-DESIGNED & DEVELOPED by FREEHTML5.CO
+<!-- Mobile Header -->
+<header class="mobile-header" role="banner">
+    <a href="#" class="menu-controls fh5co-nav-toggle js-fh5co-nav-toggle"><i></i></a>
+    <div class="text-center"><h1 class="logo stencil-small">Take Back the Court</h1></div>
+</header>
+<!-- Mobile Header-->
 
-//////////////////////////////////////////////////////
- -->
-
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
- <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Take Back the Court</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico">
-
-    <!-- Google Webfont -->
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <!-- Themify Icons -->
-    <link rel="stylesheet" href="@Url.Content("~/css/themify-icons.css")">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="@Url.Content("~/lib/bootstrap/dist/css/bootstrap.css")">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="@Url.Content("~/css/owl.carousel.min.css")">
-    <link rel="stylesheet" href="@Url.Content("~/css/owl.theme.default.min.css")">
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="@Url.Content("~/css/magnific-popup.css")">
-    <!-- Easy Responsive Tabs -->
-    <link rel="stylesheet" href="@Url.Content("~/css/easy-responsive-tabs.css")">
-    <!-- Theme Style -->
-    <link rel="stylesheet" href="@Url.Content("~/css/style.css")">
-
-
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-<body data-name="gototop">
-
-    <!-- Navigation -->
-    <div id="fh5co-main-nav-wrap">
-        <div class="fh5co-nav-overlay"></div>
-        <div class="fh5co-nav-inner">
-            <ul id="fh5co-main-nav">
-                <li class="active"><a href="@Url.Content("/index")">Home</a></li>
-                <li><a href="@Url.Content("/about")">About</a></li>
-                <li><a href="portfolio.html">Get Involved</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <ul class="fh5co-social">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-        </div>
+<div class="container">
+    <div class="row" style="min-height: 250px">
+        <div class="scotus col-xs-12"></div>
     </div>
-    <!-- Navigation -->
-     <!-- Header -->
-    <header id="fh5co-header" role="banner">
-        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white menu-controls"><i></i></a>
-        <div id="fh5co-logo" class="text-center"><h1 class="stencil">Take Back the Court</h1></div>
-    </header>
-    <!-- Header -->
-
-    <!-- Mobile Header -->
-    <header class="mobile-header" role="banner">
-        <a href="#" class="menu-controls fh5co-nav-toggle js-fh5co-nav-toggle"><i></i></a>
-        <div class="text-center"><h1 class="logo stencil-small">Take Back the Court</h1></div>
-    </header>
-    <!-- Mobile Header-->
-
-    <div class="container">
-        <div class="row" style="min-height: 250px">
-            <div class="scotus col-xs-12"></div>
-        </div>
-        <!-- Main -->
-        <main role="main">
-            <!-- Issue Areas -->
-            <div id="fh5co-crew">
-                <div class="container">
-                    <div class="fh5co-section-heading">
-                        <h1>Issues Before the Court</h1>
-                    </div>
-
-                    <div class="image-row">
-                        <div class="column">
-                            @for(var i = 0; i < 3; i++)
-                            {
-                                var url = IndexModel.GetImages()[i].Item1;
-                                var name = IndexModel.GetImages()[i].Item2;
-                                var path = IndexModel.GetImages()[i].Item3;
-                                @:<figure><a href="@Url.Page("./issues" + url)"><img class="img-responsive" src=@path alt=@name></a></figure>
-                            }
-                        </div>
-                        <div class="column">
-                            @for(var i = 3; i < 6; i++)
-                            {
-                                var url = IndexModel.GetImages()[i].Item1;
-                                var name = IndexModel.GetImages()[i].Item2;
-                                var path = IndexModel.GetImages()[i].Item3;
-                                @:<figure><a href="@Url.Page("./issues" + url)"><img class="img-responsive" src=@path alt=@name></a></figure>   
-                            }
-                        </div>
-                        <div class="column">
-                            @for(var i = 6; i < 9; i++)
-                            {
-                                var url = IndexModel.GetImages()[i].Item1;
-                                var name = IndexModel.GetImages()[i].Item2;
-                                var path = IndexModel.GetImages()[i].Item3;
-                                @:<figure><a href="@Url.Page("./issues" + url)"><img class="img-responsive" src=@path alt=@name></a></figure>
-                            }
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Issue Areas -->
-            <!-- Resources -->
-            <div class="container-fluid">
-                <div class="fh5co-section-heading">
-                    <h2 class="text-muted">Resources</h2>
-                    <h3 class="text-center">Learn more, get involved, and make change.</h3>
-                </div>
-                <div class="row">
-                    @foreach(var r in IndexModel.GetResources())
-                    {
-                        var url = r.Item1;
-                        var title = r.Item2;
-                        var text = r.Item3;
-
-                        @:<div class="col-md-3 col-sm-6">
-                            @:<article class="fh5co-post-entry">
-                                @:<h3 class="fh5co-blog-title fh5co-heading-with-border">
-                                    @:<a href="@Url.Page("./resources" + url)">@title</a> 
-                                    @:<span class="fh5co-border fh5co-border-gray"></span>
-                                @:</h3>
-                                @:<p>@text</p>
-                            @:</article>
-                        @:</div>
-                    }
-                </div>
-            </div>
-            <!-- Resources -->
-        </main>
-        <!-- Main -->
-    </div>
-    <!-- Call to action -->
-    <div class="fh5co-call-to-action" style="background-image: url(images/img_wide_1.jpg); background-position: center center;">
-        <div class="fh5co-overlay"></div>
-        <div class="container">
-            <div class="fh5co-call-to-action-wrap">
-                <div class="fh5co-call-to-action-inner text-center">
-                    <h3 class="fh5co-call-to-action-text">We’d love to chat about your business.</h3>
-                    <a href="#" class="btn btn-primary btn-lg">Get Started</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Call to action -->
-    <!-- Footer -->
-    <footer role="contentinfo">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <h2 class="fh5co-footer-title">Get Involved</h2>
-                    <ul class="fh5co-footer-links">
-                        <li><a href="#">Check your voter registration</a></li>
-                        <li><a href="#">Call your respresentatives</a></li>
-                        <li><a href="#">Option 3</a></li>
-                        <li><a href="#">Option 4</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <h2 class="fh5co-footer-title">Connect</h2>
-                    <ul class="fh5co-footer-links">
-                        <li><a href="#" class="fh5co-link"><i class="fa fa-twitter"></i>Twitter</a></li>
-                        <li><a href="#" class="fh5co-link"><i class="fa fa-facebook-square"></i>Facebook</a></li>
-                        <li><a href="#" class="fh5co-link"><i class="fa fa-github"></i>Github</a></li>
-                        <li><a href="#" class="fh5co-link"><i class="fa fa-linkedin-square"></i>LinkedIn</a></li>
-                        <li><a href="#" class="fh5co-link"><i class="fa fa-google"></i>Google Plus</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer -->
-    <!-- Go To Top -->
-    <a href="#" class="fh5co-gotop"><i class="ti-angle-up"></i></a>
-
-
-    <!-- jQuery -->
-    <script src="@Url.Content("../js/jquery.js")"></script>
-    <!-- jQuery Easing -->
-    <script src="@Url.Content("../js/jquery.easing.1.3.js")"></script> 
-    <!-- Bootstrap -->
-    <script src="@Url.Content("../lib/bootstrap/dist/js/bootstrap.js")"></script>
-    <!-- Owl carousel -->
-    <script src="@Url.Content("../js/owl.carousel.min.js")"></script>
-    <!-- Magnific Popup -->
-    <script src="@Url.Content("../lib/jquery/dist/jquery.magnific-popup.min.js")"></script>
-    <!-- Easy Responsive Tabs -->
-    <script src="@Url.Content("../js/easyResponsiveTabs.js")"></script>
-    <!-- FastClick for Mobile/Tablets -->
-    <script src="@Url.Content("../js/fastclick.js")"></script>
-    <!-- Velocity -->
-    <script src="@Url.Content("../js/velocity.min.js")"></script>
     <!-- Main -->
-    <script src="@Url.Content("../js/main.js")"></script>
-</body>
-</html>
+    <main role="main">
+        <!-- Issue Areas -->
+        <div id="fh5co-crew">
+            <div class="container">
+                <div class="fh5co-section-heading">
+                    <h1 class="stencil-med">Issues Before the Court</h1>
+                </div>
+
+                <div class="image-row">
+                    <div class="column">
+                        @for(var i = 0; i < 3; i++)
+                        {
+                            var url = IndexModel.GetImages()[i].Item1;
+                            var name = IndexModel.GetImages()[i].Item2;
+                            var path = IndexModel.GetImages()[i].Item3;
+                            @:<figure><a href="@Url.Page("./issues" + url)"><img class="img-responsive" src=@path alt=@name></a></figure>
+                        }
+                    </div>
+                    <div class="column">
+                        @for(var i = 3; i < 6; i++)
+                        {
+                            var url = IndexModel.GetImages()[i].Item1;
+                            var name = IndexModel.GetImages()[i].Item2;
+                            var path = IndexModel.GetImages()[i].Item3;
+                            @:<figure><a href="@Url.Page("./issues" + url)"><img class="img-responsive" src=@path alt=@name></a></figure>   
+                        }
+                    </div>
+                    <div class="column">
+                        @for(var i = 6; i < 9; i++)
+                        {
+                            var url = IndexModel.GetImages()[i].Item1;
+                            var name = IndexModel.GetImages()[i].Item2;
+                            var path = IndexModel.GetImages()[i].Item3;
+                            @:<figure><a href="@Url.Page("./issues" + url)"><img class="img-responsive" src=@path alt=@name></a></figure>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Issue Areas -->
+        <!-- Resources -->
+        <div class="container-fluid">
+            <div class="fh5co-section-heading">
+                <h3 class="stencil-med">Learn more, get involved, and make change.</h3>
+            </div>
+            <div class="row">
+                @foreach(var r in IndexModel.GetResources())
+                {
+                    var url = r.Item1;
+                    var title = r.Item2;
+                    var text = r.Item3;
+
+                    @:<div class="col-md-3 col-sm-6">
+                        @:<article class="fh5co-post-entry">
+                            @:<h3 class="fh5co-blog-title fh5co-heading-with-border">
+                                @:<a href="@Url.Page("./resources" + url)">@title</a> 
+                                @:<span class="fh5co-border fh5co-border-gray"></span>
+                            @:</h3>
+                            @:<p>@text</p>
+                        @:</article>
+                    @:</div>
+                }
+            </div>
+        </div>
+        <!-- Resources -->
+    </main>
+    <!-- Main -->
+</div>
+<!-- Footer -->
+<footer role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <h2 class="fh5co-footer-title">Get Involved</h2>
+                <ul class="fh5co-footer-links">
+                    <li><a href="#">Check your voter registration</a></li>
+                    <li><a href="#">Call your respresentatives</a></li>
+                    <li><a href="#">Option 3</a></li>
+                    <li><a href="#">Option 4</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h2 class="fh5co-footer-title">Connect</h2>
+                <ul class="fh5co-footer-links">
+                    <li><a href="#" class="fh5co-link"><i class="fa fa-twitter"></i>Twitter</a></li>
+                    <li><a href="#" class="fh5co-link"><i class="fa fa-facebook-square"></i>Facebook</a></li>
+                    <li><a href="#" class="fh5co-link"><i class="fa fa-github"></i>Github</a></li>
+                    <li><a href="#" class="fh5co-link"><i class="fa fa-linkedin-square"></i>LinkedIn</a></li>
+                    <li><a href="#" class="fh5co-link"><i class="fa fa-google"></i>Google Plus</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer -->
+<!-- Go To Top -->
+<a href="#" class="fh5co-gotop"><i class="ti-angle-up"></i></a>

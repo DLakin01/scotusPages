@@ -1,33 +1,17 @@
 ﻿<Properties StartupConfiguration="{CA7D1AB3-5E95-45FF-BD69-25716A932C68}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/About.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Issues.cshtml">
     <Files>
       <File FileName="Pages/Index.cshtml.cs" Line="1" Column="1" />
-      <File FileName="wwwroot/css/style.css" Line="143" Column="23" />
-      <File FileName="Pages/Index.cshtml" Line="82" Column="72" />
-      <File FileName="Pages/About.cshtml" Line="7" Column="1" />
-      <File FileName="Pages/About.cshtml.cs" Line="14" Column="12" />
+      <File FileName="wwwroot/css/style.css" Line="55" Column="27" />
+      <File FileName="Pages/Index.cshtml" Line="86" Column="38" />
+      <File FileName="Pages/About.cshtml" Line="51" Column="17" />
+      <File FileName="Pages/About.cshtml.cs" Line="6" Column="43" />
+      <File FileName="Pages/Shared/_IssuePartial.cshtml" Line="10" Column="1" />
+      <File FileName="Pages/Issues.cshtml" Line="7" Column="69" />
+      <File FileName="Pages/Issues.cshtml.cs" Line="4" Column="30" />
+      <File FileName="Pages/Shared/_Layout.cshtml" Line="34" Column="23" />
+      <File FileName="Pages/Shared/_IssuePartial.cshtml.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="scotusPages" expanded="True">
-            <Node name="scotusPages" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Pages" expanded="True">
-                <Node name="Resources" expanded="True" />
-                <Node name="Shared" expanded="True" />
-                <Node name="About.cshtml" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="ClassPad">
-        <State name="__root__">
-          <Node name="scotusPages" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -29,3 +29,5 @@
 /Users/macbook/Projects/scotusPages/obj/Debug/netcoreapp2.1/scotusPages.csproj.CopyComplete
 /Users/macbook/Projects/scotusPages/obj/Debug/netcoreapp2.1/Razor/Pages/Resources/kavanaugh.g.cshtml.cs
 /Users/macbook/Projects/scotusPages/obj/Debug/netcoreapp2.1/Razor/Pages/Resources/scotusToEnglish.g.cshtml.cs
+/Users/macbook/Projects/scotusPages/obj/Debug/netcoreapp2.1/Razor/Pages/Issues.g.cshtml.cs
+/Users/macbook/Projects/scotusPages/obj/Debug/netcoreapp2.1/Razor/Pages/Shared/_IssuePartial.g.cshtml.cs
